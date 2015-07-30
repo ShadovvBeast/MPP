@@ -1,0 +1,46 @@
+.woocommerce #payment, .woocommerce-page #payment {
+    background: rgba(90,90,90,.6);
+}
+
+.payment_methods .label {
+    color:#434343;
+}
+
+
+.woocommerce form .form-row input.input-text, .woocommerce-page form .form-row input.input-text, .woocommerce form .form-row textarea, .woocommerce-page form .form-row textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    line-height: 1.2em;
+    padding: 12px;
+}
+
+
+.woocommerce form .form-row input.input-text, .woocommerce-page form .form-row input.input-text, .woocommerce form .form-row textarea, .woocommerce-page form .form-row textarea {
+    padding: 12px;
+}
+
+
+/* updated 14/09/2013 */
+
+.related.products {
+    clear:both;
+}
+.variations td {
+padding: 0 5px;
+}
+.woocommerce-page div.product form.cart .variations td.label {
+padding: 5px 5px 0 5px;
+margin-right: 10px;
+}
+
+
+ul.cart_list img.attachment-shop_thumbnail {
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+.cart-collaterals th {font-size:13px;}

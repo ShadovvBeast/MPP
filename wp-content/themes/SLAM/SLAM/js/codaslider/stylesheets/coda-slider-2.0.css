@@ -1,0 +1,123 @@
+/*
+
+	jQuery Coda-Slider v2.0 - http://www.ndoherty.biz/coda-slider
+
+	Copyright (c) 2009 Niall Doherty
+
+	This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
+
+*/
+
+
+
+/* Insignificant stuff, for demo purposes */
+
+
+
+	
+
+	
+
+	noscript div { background: #ccc; border: 1px solid #900; margin: 20px 0; padding: 15px }
+
+
+
+/* Most common stuff you'll need to change */
+
+
+
+
+
+	
+
+	
+
+	/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+
+	.coda-slider-no-js .coda-slider { height: 200px; overflow: auto !important; padding-right: 20px }
+
+	
+
+	/* Change the width of the entire slider (without dynamic arrows) */
+
+	.coda-slider, .coda-slider .panel { width: 950px; padding-bottom:20px; } 
+
+	.coda-slider, .coda-slider .panel h2 {
+
+	font-size:70px;
+
+	}
+
+	
+
+	.coda-slider, .coda-slider .panel .slider_button {
+
+		font-size:20px;
+
+	}
+
+	
+
+	/* Change margin and width of the slider (with dynamic arrows) */
+
+	.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel { width: 950px }
+
+	.coda-slider-wrapper.arrows .coda-slider { margin: 0 10px }
+
+	
+
+	/* Arrow styling */
+
+	
+
+	/* Tab nav */
+
+
+
+	
+
+	/* Panel padding */
+
+	
+
+	
+
+	/* Preloader */
+
+	.coda-slider p.loading { padding: 20px; text-align: center }
+
+
+
+/* Don't change anything below here unless you know what you're doing */
+
+
+
+	/* Tabbed nav */
+
+	.coda-nav ul { clear: both; display: block; margin: auto; overflow: hidden }
+
+	.coda-nav ul li { display: inline }
+
+	.coda-nav ul li a { background: #000; color: #fff; display: block; float: left; margin-right: 1px; padding: 3px 6px; text-decoration: none }
+
+	
+
+	/* Miscellaneous */
+
+	.coda-slider-wrapper { clear: both; overflow: auto }
+
+	.coda-slider { float: left; overflow: hidden; position: relative }
+
+	.coda-slider .panel { display: block; float: left }
+
+	.coda-slider .panel-container { position: relative }
+
+	.coda-nav-left, .coda-nav-right { float: left }
+
+	.coda-nav-left a, .coda-nav-right a { display: block; text-align: center; text-decoration: none }
+
+	
+
+	.slider_arrows {position:relative;height:10px;border-bottom:1px solid #ddd;margin-bottom:25px;}
+
+	.uplift_me {position:absolute;top:-48px;}	

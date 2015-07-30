@@ -1,0 +1,314 @@
+3/* larger canvas, spectrum + EQ visualization and other items */
+
+
+
+.ui360-vis,
+
+.ui360-vis .sm2-360ui,
+
+.sm2-inline-list .ui360-vis,
+
+.ui360 .sm2-360btn-default,
+
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn {
+	background-image:url(img/_play.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background:transparent url(img/_play.png) no-repeat center;
+	width:30px;
+	height:30px;
+}
+
+.ui360 .sm2-360btn-default:hover{
+	background-image:url(img/_play-o.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background:transparent url(img/_play-o.png) no-repeat center;
+}
+.ui360 .sm2-360ui.sm2_playing .sm2-360btn {
+	background-image:url(img/_pause.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background:transparent url(img/_pause.png) no-repeat center;
+}
+
+.ui360 .sm2-360ui.sm2_playing .sm2-360btn:hover {
+	background-image:url(img/_play-o.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background:transparent url(img/_play-o.png) no-repeat center;
+}
+
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn:hover {
+	background-image:url(img/_play-o.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background:transparent url(img/_play-o.png) no-repeat center;
+}
+
+
+
+
+.ui360-vis {
+
+ position:relative;
+
+ /* a little extra spacing */
+
+ padding-top:1px;
+
+ padding-bottom:1px;
+
+ margin-bottom:-18px; /* approximate "line height" we want */
+
+ padding-left:248px;
+
+ margin-left:10px;
+
+ background-position:22.6% 50%; /* (~109px) initial play button position */
+
+}
+
+
+
+.sm2-inline-list .ui360-vis {
+
+ cursor:pointer
+
+}
+
+
+
+.ui360-vis a {
+
+ font:14px "helvetica neue",helvetica,monaco,lucida,terminal,monospace;
+
+ white-space:nowrap;
+
+ text-indent:0px; /* undo inline style */
+
+ top:46%; /* ehh. */
+
+}
+
+
+
+.sm2-inline-list .ui360-vis a {
+
+ line-height:256px;
+
+ top:auto;
+
+}
+
+
+
+.ui360-vis .sm2-360ui {
+
+ margin-left:-256px;
+
+}
+
+
+
+.ui360-vis .sm2-timing {
+
+ font:bold 24px "helvetica neue",helvetica,monaco,lucida,terminal,monospace;
+
+ color:#333;
+
+ text-align:center;
+
+ line-height:256px;
+
+ text-indent:0px;
+
+}
+
+
+
+.sm2-inline-list .ui360-vis,
+
+.sm2-inline-list .ui360-vis .sm2-360ui {
+
+ margin-left:0px;
+
+}
+
+
+
+.sm2-inline-list .ui360-vis {
+
+ margin:8px 13px 7px 0px;
+
+ padding-left:0px;
+
+ background-position:50% 50%; /* initial play button position */
+
+}
+
+
+
+.sm2-inline-list .ui360-vis .sm2-360ui {
+
+ border:1px solid #eee;
+
+ /* offset the border */
+
+ margin-left:-1px;
+
+ margin-top:-1px;
+
+}
+
+
+
+.sm2-inline-list .ui360-vis a {
+
+ position:absolute;
+
+ display:inline;
+
+ left:0px;
+
+ bottom:0px;
+
+ top:1px;
+
+ width:20px; /* 2px padding in box */
+
+ height:99%; /* dumb vertical hack */
+
+ *height:60px; /* IE is dumb. */
+
+ overflow:hidden;
+
+ font-size:small;
+
+ font-weight:300;
+
+ color:#333;
+
+ margin:0px;
+
+ padding:0px;
+
+ line-height:60px; /* bottom vertical alignment for text */
+
+ *line-height:60px; /* IE again */
+
+ text-align:center;
+
+ border-radius:0px;
+
+}
+
+
+
+.sm2-inline-list .ui360 a:hover {
+
+ background-color:transparent; /* reset */
+
+}
+
+
+
+.sm2-inline-list .ui360-vis:hover .sm2-360ui,
+
+.sm2-inline-list .ui360-vis a.sm2_link:hover,
+
+.sm2-inline-list .ui360-vis a.sm2_link:active,
+
+.sm2-inline-list .ui360-vis a.sm2_link:focus {
+
+ background-color:transparent;
+
+}
+
+
+
+.sm2-inline-list .ui360-vis:hover a.sm2_link {
+/*
+ background-color:#fafafa;
+
+ *background-color:transparent; 
+*/
+}
+
+
+
+
+.ui360-vis .sm2-360btn,
+
+.ui360-vis .sm2-360ui.sm2_paused .sm2-360btn,
+
+.ui360-vis .sm2-360ui.sm2_playing .sm2-360btn {
+
+ width:28px;
+
+ height:28px;
+
+ margin-left:-14px;
+
+ margin-top:-14px;
+
+ border-radius: none;
+
+}
+
+
+
+.ui360-vis,
+
+.ui360-vis .sm2-360ui.sm2_paused .sm2-360btn,
+
+.ui360-vis .sm2-360btn-default {
+
+ cursor:pointer;
+
+}
+
+
+
+.ui360-vis:hover .sm2-360btn,
+
+.ui360-vis .sm2-360btn-default:hover,
+
+.ui360-vis .sm2-360ui.sm2_paused .sm2-360btn:hover {
+
+ cursor:pointer;
+
+}
+
+
+
+
+
+.ui360-vis .sm2-360ui.sm2_playing .sm2-360btn:hover,
+
+.ui360-vis .sm2-360btn-playing:hover {
+
+ cursor:pointer;
+
+}
+
+
+
+.ui360-vis {
+
+}
+
+
+
+.ui360-vis .sm2-360btn-default {
+
+
+}
+
+
+
+.ui360-vis .sm2-360ui.sm2_dragging .sm2-360btn {
+
+ visibility: hidden;
+
+}

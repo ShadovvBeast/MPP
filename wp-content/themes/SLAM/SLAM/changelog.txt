@@ -1,0 +1,281 @@
+
+v 3.2.3 [2015.05.12]
+* fixed menu bug in mobile closing menu when clicking to open sub items
+* mp3 button is hidden in home carousel and release page if there is no mp3 file uploaded
+* fixed google plus reload code in main.js
+* custom-types/qt-events/events.php new Facebook comments integration (requires SDK active in qantum panel)
+* part-podcast.php now mp3 podcasts will play with native Wordpress player from the single page
+* fixed Facebook Gallery bug for new Facebook API
+* events.php fixed buttons issue for new php version
+* removed prettyPhoto
+* added Instagram icon in header
+* functions.php added flush_rewrite_rules after setup
+* optimized release, podcast, events and artist post type custom fields for better performance
+* new metaboxes framework integration with new media library (safer, easier, faster!)
+* new playlist design (full screen)
+* playlist works now in mobile
+* playlist tracks link to the release page
+* higher menu height
+* improved tracks layout in single release page
+* bigger player ring
+* removed class "qw-archive-imagelink" from image of single release page
+*fixed css for tags
+
+
+v 3.2.2 [2015.04.28]
+* Added One Click Demo Content Installer!
+* Fixed the Wordpress vulnerability for add_query_arg
+* Added woocommerce class to all pages to solve AAPL compatibility
+* updated TGM plugin activation
+* Updated bundle plugins Revolution Slider, Visual Page Composer and Advanced Ajax Page Load
+* Added child theme
+* Added visible music player in mobile
+* hidden player volume in mobile
+* Menu is now closing with mobile version when changing page
+* fixed AAPL preloader styles
+* fixed AAPL settings
+* Added support forum
+* fixed first installation bug for child themes in verify_theme_settings.php (require (get_template_directory().'/admin/option_fields.php');)
+* fixed url path for fontawesome when used with child theme
+* fixed tgm path for child themes
+
+
+v 3.2.1 [2015.02.11]
+* part-underconstruction.php is updated
+* main.js updated removing some debug output
+* includes/frontend-function.php:682+683 replaced $ with jQuery in carousel activation script 
+* fixed query in podcast-widget.php (removed line 29)
+* includes/CircularContentCarousel/carousel.php:77 Added check on the mp3
+* bootstrap.qantum.css:552 added rule for centering images
+* updated advanced ajax page load plugin with social reload codes
+
+v 3.2.0 [2015.02.08]
+* Modified the plugin "Qantumthemes Ajax Revslider", edited file ajax_revslider.js 
+* updated beatport importer for new url pro.beatport.com
+* Added activation notice in admin panel due to high piracy "free download" activity. 
+	We apologize with all the buyers for this pain but the cost on our company of the piracy activity was too high. Now the theme asks to insert purchase code.
+* Fixed Woocommerce form issues and CSS styling (edited bootstrap.qantum.css)
+
+v 3.1.9 [2015.01.26]
+* fixed podcast footer repeating with ajax load
+* fixed home page releases link in mobile
+* Added Activation Key functions for free external plugins
+* New version of Qantumthemes Free beatport Importer
+* Updated Visual Composer to latest version
+* Updated Revolution Slider to latest version
+* Added plugin to enable revolutionslider via ajax, and added rev_slider_ajax shortcode. Added function in the main.js after ajax page load
+* Added reload script in main.js for the new ajax revolution slider
+* Added player autoplay functions
+* Added purchase verification option in Qantum Panel (optional, for extra features)
+* Wordpress 4.1 Compatible
+* PHP 5.5 compatible
+
+v 3.1.8 [2014.09.24]
+* fixed html in index.php page-homepage.php and loop-index.php (mooved </div>)
+* fixed menu in iphone devices (labelpro-scripts.js)
+* fixed scroll point for podcasts (part-archivepodcast.php, loop-archivepodcast.php and part-archivepodcasthome.php)
+* Fixed Mixloud import function to skip imported podcast in a more efficient way
+* carousel.php fixed mobile click bug
+
+v 3.1.7 [2014.09.12]
+* Updated Wp Bakery Visual Composer to 4.3.4
+* Updated Revolution Slider to 4.6
+* Updated Beatport Importer
+* fixed new beatport sample url, now importing mp3 to avoid sucking bandwidth to BP servers. Added copyright disclaimer.
+* main.js modified for enabling scripts contained in the pages loaded via ajax
+* labelpro-scripts.js edited to fix old beatport links
+* Added code in the Advanced Ajax Page Loader to execute the scripts in the ajax loaded page
+
+v 3.1.6 [2014.09.12]
+* edited file part-archivereease.php to fix artists archives with no image
+* main.js modified for enabling scripts contained in the pages loaded via ajax
+
+v 3.1.5
+* Changed setcookie function in Beatport Importer to fit WP 4.0 (, time() + YEAR_IN_SECONDS, SITECOOKIEPATH, null, $secure )
+
+v 3.1
+* fix google maps api on pagereload (changed main.js)
+* fix artist widget if no artist have genre (changed artist-widget.php)
+* fixed release page when soundcloud link is added also with ajax page load (changed part-release.php, main.js)
+
+v 3.0: Hey, this is a major update!
+* 1200px layout
+* Added Revolution Slider and fullwidth revolution slider possibility for unboxed layout
+* Added WP Backery Visual Page Composer
+* Added post widget post with slideshow and category filter
+* Added mobile alternative for release carousel in home
+* fullwidth slideshow
+* better woocommerce css
+* removed round corners
+* added background opacity in options panel
+* modified styles / background panels
+* Accorped all external javascripts in labelpro-scripts.js
+* removed anystretch, replaced with background-cover (no more support for IE8, better performance)
+* removed qantum modal replaced by new modal
+* Slider Revolution is a custom version, in revslider_output.class.php the function fireSlider has been added to allow ajax page load. Can work only with this theme
+* Improved event list layout, with event details
+* Footer text color fix
+* Updated Facebook Gallery
+* Replaced colorbox with Swipebox v1.2.9 
+* Added Google Font
+* New admin Panel
+
+v 2.8.3
+* fixed artist image zoom
+* fixed background image color for qtslideshow in pages
+* Added new homepage module: podcasts
+* Added youtube proportion resize
+* Fixed excerpt text and added link in frontend_functions.php
+* Corrected server glitch for month name in events archive in the loop-archiveevent.php file, line 38 $mname = strftime("%b", $time-1);
+* Main.js added max height for soundcloud oembed http://soundcloud.com/oembed?maxheight=140
+* FIXED SOUNDCLOUD OEMBED HEIGHT
+* woocommerce.php added dark background to the page
+* QT slideshow added height responsiveness
+* Fixed limit on Beatport Import tracks number by adding  'perPage' => 100 in _common.php
+* CSS: Better font size for the artist release list in the artist page (bootstrap.qantum.css -> ul.qw-artist-release-list li)
+* CSS: Removed minimum video height for the youtube videos in the artist page (.qw-detail-medialink)
+* Fixed Facebook Comments on Events page
+* Added Comments Closed custom text
+
+v 2.8.2
+* Updated Beatport Importer
+
+v 2.8.1
+* Updated Beatport Importer
+
+v 2.8
+* edit events.php added check if ($post) : 252
+* NEW IMPORTER: now the new V3 API importer is again importing the samples url
+
+v 2.7 2013 10 12
+* Nivo slideshow html post_per_page limit bypassed (includes/nivoslider.php)
+* Fixed qtslideshow links on images
+* Fixed css for main contents paragraphs in the main css file, added clear:both
+* Added new beatport release importer using beatport v2 api
+* Improved fisrt installation process: fixed menu links
+* Removed borders for the new Facebook fanbox widget
+
+v 2.6 2013 09 30
+* Added "exclude from playlist" feature to each track
+* Removed font from  "demo panel" due to incompatibility with some servers
+* Changed the die statement in echo in adminindex.php to avoid site crash in case of permission change or core changes
+
+v 2.5 2013 09 27 
+* small css fixes
+
+v 2.4.0
+* code fixes in js/main.js
+
+v 2.3.2
+* Using wp_remote_post instead of cUrl in beatimp.ajax.php
+* Fixed Nivo Slider small bug
+
+v 2.3.1
+* fixed small php bug on Beatport importer
+
+v 2.3
+* Update to latest beatport API with oAuth protocol: the new amazing importer works with any release, dj or label, also to import Artist's profiles!
+* Removed twitter widget: switching to the new API costs too much effort than raccomanding one of the many good plugins from the repository.
+
+v 2.2.0
+* Fixed buy buttons background color for some skins
+* Fixed a "ghost" cart button issue
+* deleted the style "overflow:hidden" for paragraph on the main content
+* Added some styles for the woocommerce widget
+* Added compatibility for GoDaddy hosting issue on importing beatport releases
+* added the option to autoslide the bootstrap slider
+* added support for the new soundcloud https protocol
+
+v 2.1.9
+* fixed shortcodes missing file for icons
+
+v 2.0.9
+New:
+* Support For Woocommerce
+* New beatport importer AJAX
+* New post type: events, with map geolocation support and buy ticket links, plus facebook comments
+* New lightbox gallery
+* New AUTOMATIC FACEBOOK GALLERY IMPORTER (only for public galleries from fanpages)
+* New "Coming Soon" page customizable, that grant website access only to administrators
+* Added 175 selected fontface fonts
+* New font selector with preview!
+* Added smooth scrolling to page
+* Added Fontawesome icons
+* Added possibility to put soundcloud or youtube link as track preview in releases page, with auto embed of the player
+* Added target="blank" to social icons
+* Added layout option: put social icons on the right of the logo (Header layout balance option)
+* Added "save" button on top of qantum panel pages
+* Improved Qantum Panel admin interface
+* Added artist archives for genre: taxonomy-artistgenre.php
+* Added possibility to hide breadcrumb (Qantum panel -> layout)
+* Playlist EP number customizable (Qantum panel -> Music player options)
+* Possibility to hide the player
+* Added instructions for semitransparent backgrounds in the colors options panel
+* Added pagination to index posts list
+* Added default image for podcast with link to direct mp3 url
+* Added single page Fullwidth template
+* Added support for new https soundcloud URL for auto embed
+* Added demo panel to test customization
+* added the new auto youtube embed with Iframe
+* Added the new SoundCloud HTML5 player with Iframe
+* Added responsiveness to youtube embed video
+* Added nice menu icons to Qantum Admin for a better usability
+* Added two slots for custom page content in the home page
+* Added artist order and specific artist filter in artists widget
+* Added the new mixcloud embedding iframe code with a toggle button to display the playlist
+* Added single release buy link
+* Customizable colors for the music player 
+
+Bug fixes:
+* Featured image padding fix
+* Fixed shortcodes icons and tabs in post editor button
+* curl replaced native wordpress functions
+* Replaced Cufon with fontface fonts in admin
+* moved jscolors to theme initialization function (mytheme_add_init) in adminindex.php
+* replaced function hook with admin_enqueue_scripts in adminindex.php
+* better adminindex code formatting
+* Fixed server limitation bug for font face selections
+* added bebas-newe default font
+* removed categories from artists and podcasts (which caused a permalink error on some wp installations)
+* cleared RSS standard url: now the icon will never appear
+* fixed Facebook hover fx
+* removed tags from importMixcloudNow.php
+* Fixed first track of playlist
+* fixed mobile submenu glitch in iPad
+* fixed list formatting in posts and pages
+* added htmlentities to content text into admin panel
+* Footer: encoding html now allows to put links in the footer text
+* Updated the Facebook like button for the new policy (is no more wrapped into a div)
+
+
+v. 1.2.5
+* fixed bug of releases caused by changes in line matching between post type name and meta boxes of tracks
+//$sample_box = new custom_add_meta_box( 'release_tracks', 'Release Tracks', $fields, 'release', true );
+
+v. 1.2.4
+* code tide up
+
+v. 1.2.3 
+* fixed minor bug: delete background on QantumPro Admin Panel (replaced != with ==)
+* changed the name of jquery.cookie.js in frontend and backend because of some servers restrictions
+
+v. 1.2.2 
+* added if(is_object($term)){ to loop-archivepodcast.php and loop-archiverelease.php  to solve (Trying to get property of non-object in)
+* php warning fix in part-archivepodcast.php and part-archiverelease.php (added if(is_object($termfilter)){)
+
+* fixed custom taxonomy conflicts from genres and filters
+
+
+
+v. 1.2.1
+Minor changes
+* created alternative to file_get_contents with curl fot hosting not allowing it
+
+v. 1.2
+Changelog:
+* Added genre taxonomy to releases
+* Created new templates: taxonomy-genre.php and taxonomy-filter.php (used when clicking on custom taxonomies links at the bottom of those post types (release and podcast)
+
+Bux fixes:
+* Fixed minor bug on adminindex, which causes php error in a very rare case in the backend when contrastant values are passed through admin panel
+* Added Facebook Like Language Selection in Facebook options
